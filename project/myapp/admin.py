@@ -1,4 +1,5 @@
 from django.contrib import admin
-from .models import form
-admin.site.register(form)
+from .models import myform
+
 # Register your models here.
+admin.site.register(myform)

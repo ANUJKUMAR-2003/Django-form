@@ -19,5 +19,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-  path('form-page/', views.form,name='form')
+  path('form-page/', views.form,name='form'),
+  path('', views.table, name='table')
 ]
