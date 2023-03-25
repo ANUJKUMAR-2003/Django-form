@@ -1,11 +1,11 @@
 from django.db import models
-
+from django.core.validators import MinLengthValidator, MaxValueValidator
 # Create your models here.
 class myform(models.Model):
     Name = models.CharField( max_length=20)
-    email = models.EmailField(max_length=20)
+    email = models.EmailField(unique=True)
     mobile_number = models.CharField(max_length=10)
-    college = models.CharField(max_length=50)
+    college = models.CharField(max_length=50, validators=[MinLengthValidator(10)])
     branch = models.CharField(max_length=30)
     year = models.CharField(max_length=10)
     

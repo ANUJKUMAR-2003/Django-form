@@ -4,7 +4,7 @@ from .models import myform
 class detailsForm(forms.ModelForm):
     
     Name = forms.CharField(widget=forms.TextInput(attrs={"class":"input","type":"text","placeholder":"Name.."}))
-    email = forms.CharField(widget=forms.TextInput(attrs={"class":"input","type":"text","placeholder":"Email.."}))
+    email = forms.CharField(widget=forms.TextInput(attrs={"class":"input","type":"email","placeholder":"Email.."}))
     mobile_number = forms.CharField(widget=forms.TextInput(attrs={"class":"input","type":"text","placeholder":"Phone Number.."}))
     college = forms.CharField(widget=forms.TextInput(attrs={"class":"input","type":"text","placeholder":"Collage..."}))
     branch = forms.CharField(widget=forms.TextInput(attrs={"class":"input","type":"text","placeholder":"Branch.."}))

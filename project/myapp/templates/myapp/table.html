@@ -35,7 +35,6 @@
             <tr>
               <td>{{i.Name}}</td>
               <td>{{i.email}}</td>
-
               <td>{{i.mobile_number}}</td>
               <td>{{i.college}}</td>
               <td>{{i.branch}}</td>
@@ -46,9 +45,7 @@
         </table>
       </div>
       <div class="btn">
-        <button>
-          <a href="{% url 'form' %}#show">Add your Details</a>
-        </button>
+        <a href="{% url 'form' %}"> <button>Add your Details</button></a>
       </div>
     </div>
   </body>
